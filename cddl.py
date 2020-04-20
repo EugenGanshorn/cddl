@@ -78,14 +78,14 @@ def cddlLogin():
         archivLink = driver.find_element_by_link_text('Archiv')
         archivLink.click()
 
-        # Select GESAMTER_ZEITRAUM
-        zeitraumSelect = driver.find_element_by_id('f1-zeitraumInput_pbInput')
-        selectField    = webdriver.support.ui.Select(zeitraumSelect)
-        selectField.select_by_value('GESAMTER_ZEITRAUM')
+    # Select GESAMTER_ZEITRAUM
+    zeitraumSelect = driver.find_element_by_id('f1-zeitraumInput_pbInput')
+    selectField    = webdriver.support.ui.Select(zeitraumSelect)
+    selectField.select_by_value('GESAMTER_ZEITRAUM')
 
-        # Start search
-        suchenField = driver.find_element_by_link_text('Suchen')
-        suchenField.click()
+    # Start search
+    suchenField = driver.find_element_by_link_text('Suchen')
+    suchenField.click()
 
     return driver
 
